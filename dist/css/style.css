@@ -4,7 +4,9 @@
   box-sizing: border-box;
 }
 h2 {
-  font-size: 42.16px;
+  font-size: 42px;
+  margin: 0;
+  padding: 0;
 }
 ul {
   list-style: none;
@@ -63,87 +65,9 @@ svg:not(:root) {
 main {
   display: block;
 }
-@font-face {
-  font-family: 'TitilliumExtraLight';
-  src: url('../fonts/TitilliumExtraLight/TitilliumWeb-ExtraLight.eot');
-  src: local('Titillium Web ExtraLight'), local('TitilliumWeb-ExtraLight'), url('../fonts/TitilliumExtraLight/TitilliumWeb-ExtraLight.eot?#iefix') format('embedded-opentype'), url('../fonts/TitilliumExtraLight/TitilliumWeb-ExtraLight.woff') format('woff'), url('../fonts/TitilliumExtraLight/TitilliumWeb-ExtraLight.ttf') format('truetype');
-  font-weight: 200;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'TitilliumBoldItalic';
-  src: url('../../fonts/TitilliumWeb-BoldItalic.eot');
-  src: local('Titillium Web Bold Italic'), local('TitilliumWeb-BoldItalic'), url('../../fonts/TitilliumWeb-BoldItalic.eot?#iefix') format('embedded-opentype'), url('../../fonts/TitilliumWeb-BoldItalic.woff') format('woff'), url('../../fonts/TitilliumWeb-BoldItalic.ttf') format('truetype');
-  font-weight: bold;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'TitilliumBold';
-  src: url('../../fonts/TitilliumWeb-Bold.eot');
-  src: local('Titillium Web Bold'), local('TitilliumWeb-Bold'), url('../../fonts/TitilliumWeb-Bold.eot?#iefix') format('embedded-opentype'), url('../../fonts/TitilliumWeb-Bold.woff') format('woff'), url('../../fonts/TitilliumWeb-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'TitilliumSemiBold';
-  src: url('../../fonts/TitilliumWeb-SemiBold.eot');
-  src: local('Titillium Web SemiBold'), local('TitilliumWeb-SemiBold'), url('../../fonts/TitilliumWeb-SemiBold.eot?#iefix') format('embedded-opentype'), url('../../fonts/TitilliumWeb-SemiBold.woff') format('woff'), url('../../fonts/TitilliumWeb-SemiBold.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'TitilliumLight';
-  src: url('../../fonts/TitilliumWeb-Light.eot');
-  src: local('Titillium Web Light'), local('TitilliumWeb-Light'), url('../../fonts/TitilliumWeb-Light.eot?#iefix') format('embedded-opentype'), url('../../fonts/TitilliumWeb-Light.woff') format('woff'), url('../../fonts/TitilliumWeb-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'TitilliumBlack';
-  src: url('../../fonts/TitilliumWeb-Black.eot');
-  src: local('Titillium Web Black'), local('TitilliumWeb-Black'), url('../../fonts/TitilliumWeb-Black.eot?#iefix') format('embedded-opentype'), url('../../fonts/TitilliumWeb-Black.woff') format('woff'), url('../../fonts/TitilliumWeb-Black.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'TitilliumExtraLightItalic';
-  src: url('../../fonts/TitilliumWeb-ExtraLightItalic.eot');
-  src: local('Titillium Web ExtraLight Italic'), local('TitilliumWeb-ExtraLightItalic'), url('../../fonts/TitilliumWeb-ExtraLightItalic.eot?#iefix') format('embedded-opentype'), url('../../fonts/TitilliumWeb-ExtraLightItalic.woff') format('woff'), url('../../fonts/TitilliumWeb-ExtraLightItalic.ttf') format('truetype');
-  font-weight: 200;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'TitilliumRegular';
-  src: url('../../fonts/TitilliumWeb-Regular.eot');
-  src: local('Titillium Web Regular'), local('TitilliumWeb-Regular'), url('../../fonts/TitilliumWeb-Regular.eot?#iefix') format('embedded-opentype'), url('../../fonts/TitilliumWeb-Regular.woff') format('woff'), url('../../fonts/TitilliumWeb-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'TitilliumLightItalic';
-  src: url('../../fonts/TitilliumWeb-LightItalic.eot');
-  src: local('Titillium Web Light Italic'), local('TitilliumWeb-LightItalic'), url('../../fonts/TitilliumWeb-LightItalic.eot?#iefix') format('embedded-opentype'), url('../../fonts/TitilliumWeb-LightItalic.woff') format('woff'), url('../../fonts/TitilliumWeb-LightItalic.ttf') format('truetype');
-  font-weight: 300;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'TitilliumItalic';
-  src: url('../../fonts/TitilliumWeb-Italic.eot');
-  src: local('Titillium Web Italic'), local('TitilliumWeb-Italic'), url('../../fonts/TitilliumWeb-Italic.eot?#iefix') format('embedded-opentype'), url('../../fonts/TitilliumWeb-Italic.woff') format('woff'), url('../../fonts/TitilliumWeb-Italic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'TitilliumSemiBoldItalic';
-  src: url('../../fonts/TitilliumWeb-SemiBoldItalic.eot');
-  src: local('Titillium Web SemiBold Italic'), local('TitilliumWeb-SemiBoldItalic'), url('../../fonts/TitilliumWeb-SemiBoldItalic.eot?#iefix') format('embedded-opentype'), url('../../fonts/TitilliumWeb-SemiBoldItalic.woff') format('woff'), url('../../fonts/TitilliumWeb-SemiBoldItalic.ttf') format('truetype');
-  font-weight: 600;
-  font-style: italic;
-}
 .u-container {
-  width: 1140px;
+  width: 1100px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 .u-heightWelcome {
   height: 596px;
@@ -169,6 +93,9 @@ main {
 .u-height100 {
   height: 100%;
 }
+.u-width540 {
+  width: 540px;
+}
 .Welcome {
   display: -ms-flexbox;
   display: flex;
@@ -180,8 +107,16 @@ main {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  padding-top: 58px;
+  padding-top: 27px;
   padding-bottom: 150px;
+  height: 40px;
+  line-height: 40px;
+}
+.Welcome-logo--wrapper {
+  padding-left: 42px;
+}
+.Welcome--navbar--wrap {
+  margin-right: 4px;
 }
 .Welcome-navbar {
   display: -ms-flexbox;
@@ -190,13 +125,17 @@ main {
       justify-content: space-around;
   font-size: 16px;
   height: 40px;
+  width: 459px;
+  letter-spacing: -0.5px;
 }
 .Welcome-items {
-  font-family: 'TitilliumRegular', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: normal;
+  font-style: normal;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 10px;
+  padding: 9px 15px;
 }
 .Welcome-items:hover {
   background: #643a79;
@@ -207,33 +146,43 @@ main {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  -ms-flex-pack: center;
-      justify-content: center;
-  text-align: center;
   -ms-flex-align: center;
       align-items: center;
-  font-family: 'TitilliumBold', sans-serif;
   box-sizing: border-box;
-  padding-bottom: 120px;
+  padding-bottom: 148px;
+  padding-top: 25px;
 }
 .Welcome-contentText {
-  padding-bottom: 63px;
+  font-size: 42.16px;
+  font-family: 'Titillium Web', sans-serif;
+  font-style: normal;
+  letter-spacing: -0.9px;
+  word-spacing: -5.9px;
+  font-weight: bold;
 }
 .Btn {
   width: 294px;
   height: 66px;
   color: #ffffff;
-  font-family: 'TitilliumSemiBold', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
+  font-style: normal;
   font-size: 18px;
   text-transform: uppercase;
   border-radius: 3px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
+.Btn-welcome {
+  margin-top: 54px;
+}
 .Btn-wrap {
   width: 100%;
   text-align: center;
   padding-bottom: 110px;
+  padding-bottom: 112px;
+  margin-top: 18px;
+  margin-left: 5px;
 }
 .Btn--orange {
   background: #eb7d4b;
@@ -252,17 +201,28 @@ main {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
+  height: 37px;
+  margin: 0 auto;
 }
 .Btn-item {
   font-size: 18px;
-  font-family: 'TitilliumRegular', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: normal;
+  font-style: normal;
   text-transform: uppercase;
   color: #393939;
   background: #ebc985;
-  margin-right: 10px;
-  padding: 13px 27px;
+  margin: 0 5px;
   border-radius: 5px;
   box-sizing: border-box;
+}
+.Btn-item:first-child,
+.Btn-item:nth-child(2) {
+  width: 85px;
+}
+.Btn-item:last-child,
+.Btn-item:nth-child(3) {
+  width: 90px;
 }
 .Btn-item:hover {
   background: #ffffff;
@@ -279,15 +239,19 @@ main {
 }
 .Services-header {
   text-align: center;
-  padding-top: 120px;
-  padding-bottom: 80px;
+  padding-top: 112px;
+  padding-bottom: 79px;
   margin: 0 auto;
 }
 .Services-headerText {
-  font-family: 'TitilliumBold', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+  font-style: normal;
   font-size: 40px;
   text-transform: uppercase;
-  padding-bottom: 20px;
+  padding-bottom: 13px;
+  letter-spacing: 1.3px;
+  word-spacing: -5px;
 }
 .Services-decorLine {
   display: inline-block;
@@ -295,10 +259,12 @@ main {
   width: 88px;
   height: 4px;
   background: #14a58c;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 .Services-subText {
-  font-family: 'TitilliumRegular', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: normal;
+  font-style: normal;
   font-size: 18px;
   line-height: 1.5;
 }
@@ -309,7 +275,7 @@ main {
       justify-content: space-between;
 }
 .Services-cardContent {
-  width: 22.8%;
+  width: 23%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -318,22 +284,40 @@ main {
       align-items: center;
   box-sizing: border-box;
 }
+.Services-cardContent:first-child {
+  padding-left: 20px;
+}
+.Services-cardContent:last-child {
+  margin-right: 8px;
+  margin-top: -3px;
+}
+.Services-cardContent:nth-child(2) {
+  margin-top: -6px;
+  margin-left: 14px;
+}
+.Services-cardContent:nth-child(3) {
+  margin-right: 6px;
+}
 .Services-cardImg {
   padding-bottom: 58px;
+  margin-left: 20px;
 }
 .Services-cardHeader {
-  font-family: 'TitilliumBold', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  font-style: normal;
   font-weight: bold;
   font-size: 24px;
   text-transform: uppercase;
   padding-bottom: 25px;
 }
 .Services-cardSubText {
-  font-family: 'TitilliumLight', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+  font-style: normal;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  margin: 0 30px;
+  margin: -10px 19px;
 }
 .Team {
   display: -ms-flexbox;
@@ -347,15 +331,17 @@ main {
 }
 .Team-header {
   text-align: center;
-  padding-top: 120px;
-  padding-bottom: 80px;
+  padding-top: 112px;
+  padding-bottom: 74px;
   margin: 0 auto;
 }
 .Team-headerText {
-  font-family: 'TitilliumBold', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+  font-style: normal;
   font-size: 40px;
   text-transform: uppercase;
-  padding-bottom: 22px;
+  padding-bottom: 13px;
 }
 .Team-decorLine {
   display: inline-block;
@@ -363,10 +349,12 @@ main {
   width: 88px;
   height: 4px;
   background: #c8d9e5;
-  margin-bottom: 24px;
+  margin-bottom: 17px;
 }
 .Team-subText {
-  font-family: 'TitilliumRegular', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: normal;
+  font-style: normal;
   font-size: 18px;
   line-height: 1.5;
 }
@@ -382,38 +370,49 @@ main {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
+  -ms-flex-align: baseline;
+      align-items: baseline;
   box-sizing: border-box;
 }
 .Team-faceCard {
-  padding-bottom: 40px;
+  padding-bottom: 37px;
 }
 .Team-cardHeader {
-  font-family: 'TitilliumBold', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  font-style: normal;
   font-weight: bold;
   font-size: 24px;
   text-transform: uppercase;
-  padding-bottom: 14px;
+  padding-bottom: 6px;
+  margin: 0 auto;
 }
 .Team-cardSubHeader {
   color: #30bae7;
-  font-family: 'TitilliumRegular', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: normal;
+  font-style: normal;
   font-size: 16px;
-  padding-bottom: 29px;
+  padding-bottom: 24px;
+  margin: 0 auto;
 }
 .Team-cardSubText {
-  font-family: 'TitilliumLight', sans-serif;
+  margin: 0 auto;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+  font-style: normal;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  margin: 0 30px;
+  margin: -2px 20px;
   padding-bottom: 31px;
 }
 .Icon {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-align: end;
+      align-items: flex-end;
   padding-bottom: 126px;
+  margin: 0 auto;
 }
 .Icon-imgLink {
   margin-right: 11px;
@@ -433,16 +432,19 @@ main {
 }
 .Portfolio-header {
   text-align: center;
-  padding-top: 120px;
-  padding-bottom: 78px;
+  padding-top: 114px;
+  padding-bottom: 47px;
+  padding-left: 9px;
   margin: 0 auto;
-  width: 47.36%;
+  width: 48.36%;
 }
 .Portfolio-headerText {
-  font-family: 'TitilliumBold', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+  font-style: normal;
   font-size: 40px;
   text-transform: uppercase;
-  padding-bottom: 22px;
+  padding-bottom: 11px;
 }
 .Portfolio-decorLine {
   display: inline-block;
@@ -450,13 +452,15 @@ main {
   width: 88px;
   height: 4px;
   background: #e5c37f;
-  margin-bottom: 24px;
+  margin-bottom: 14px;
 }
 .Portfolio-subText {
-  font-family: 'TitilliumRegular', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: normal;
+  font-style: normal;
   font-size: 18px;
   line-height: 1.5;
-  margin-bottom: 45px;
+  margin-bottom: 38px;
 }
 .Portfolio-wrap {
   display: -ms-flexbox;
@@ -468,17 +472,24 @@ main {
   -ms-flex-pack: justify;
       justify-content: space-between;
   text-align: center;
+  padding-top: 18px;
 }
 .Portfolio-cardWrap {
-  padding-bottom: 63px;
+  padding-bottom: 60px;
+}
+.Portfolio-cardWrap:first-child,
+.Portfolio-cardWrap:nth-child(3) {
+  margin-right: 10px;
 }
 .Portfolio-items {
   width: 100%;
-  padding-bottom: 33px;
+  padding-bottom: 24px;
 }
 .Portfolio-textDepiction {
   font-size: 18px;
-  font-family: "TitilliumRegular", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: normal;
+  font-style: normal;
   text-transform: uppercase;
 }
 .Testimonials {
@@ -493,15 +504,17 @@ main {
 }
 .Testimonials-header {
   text-align: center;
-  padding-top: 120px;
-  padding-bottom: 78px;
+  padding-top: 114px;
+  padding-bottom: 63px;
   margin: 0 auto;
 }
 .Testimonials-headerText {
-  font-family: 'TitilliumBold', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+  font-style: normal;
   font-size: 40px;
   text-transform: uppercase;
-  padding-bottom: 22px;
+  padding-bottom: 11px;
 }
 .Testimonials-decorLine {
   display: inline-block;
@@ -509,10 +522,12 @@ main {
   width: 88px;
   height: 4px;
   background: #b73c6d;
-  margin-bottom: 24px;
+  margin-bottom: 15px;
 }
 .Testimonials-subText {
-  font-family: 'TitilliumRegular', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: normal;
+  font-style: normal;
   font-size: 18px;
   line-height: 1.5;
 }
@@ -531,28 +546,34 @@ main {
       justify-content: space-between;
 }
 .Testimonials-wrapper:first-child {
-  padding-bottom: 148px;
+  padding-bottom: 131px;
 }
 .Testimonials-wrapper:last-child {
-  padding-bottom: 128px;
+  padding-bottom: 89px;
 }
 .Testimonials-wrapCardImg {
   margin-right: 50px;
 }
 .Testimonials-ctt {
   font-size: 21px;
-  font-family: 'TitilliumLight', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+  font-style: normal;
   line-height: 1.5;
   padding-bottom: 28px;
 }
 .Testimonials-nameText {
   font-size: 24px;
-  font-family: 'TitilliumBold', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+  font-style: normal;
   padding-bottom: 11px;
 }
 .Testimonials-post {
   font-size: 18px;
-  font-family: 'TitilliumRegular', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: normal;
+  font-style: normal;
   color: #facd96;
 }
 .Form {
@@ -567,15 +588,17 @@ main {
 }
 .Form-header {
   text-align: center;
-  padding-top: 120px;
-  padding-bottom: 78px;
+  padding-top: 113px;
+  padding-bottom: 73px;
   margin: 0 auto;
 }
 .Form-headerText {
-  font-family: 'TitilliumBold', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+  font-style: normal;
   font-size: 40px;
   text-transform: uppercase;
-  padding-bottom: 20px;
+  padding-bottom: 11px;
 }
 .Form-decorLine {
   display: inline-block;
@@ -583,10 +606,12 @@ main {
   width: 88px;
   height: 4px;
   background: #c8d9e5;
-  margin-bottom: 22px;
+  margin-bottom: 13px;
 }
 .Form-subText {
-  font-family: 'TitilliumRegular', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: normal;
+  font-style: normal;
   font-size: 18px;
   line-height: 1.5;
 }
@@ -597,7 +622,7 @@ main {
       flex-direction: column;
   -ms-flex-align: center;
       align-items: center;
-  padding-bottom: 115px;
+  padding-bottom: 119px;
 }
 .Form-headerWrap {
   display: -ms-flexbox;
@@ -609,19 +634,28 @@ main {
 }
 .Form-box {
   box-sizing: border-box;
-  font-family: "TitilliumRegular", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: normal;
+  font-style: normal;
   font-size: 18px;
-  padding: 19.5px;
+  padding: 22px 26px;
   background: #273a71;
   outline: none;
   color: #ffffff;
   border-radius: 5px;
+}
+.Form-box:nth-child(2) {
+  padding: 0px 17px;
 }
 .Form-group {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
+  margin-left: 7px;
+}
+.Form-group:nth-child(2) {
+  margin-left: 0;
 }
 .Form-messege {
   background: #273a71 url(../images/Arrow.png) no-repeat bottom right(-3px);
@@ -643,7 +677,9 @@ main {
       align-items: center;
   background: #344b8e;
   color: #ffffff;
-  font-family: 'TitilliumSemiBold', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
+  font-style: normal;
   font-size: 24px;
 }
 .Footer-navigation {
@@ -651,7 +687,7 @@ main {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 0 73px;
+  padding: 0 57px;
 }
 .Footer-items {
   text-decoration: none;

@@ -6,15 +6,17 @@
 	color: @color-text;
 	&-header {
 		text-align: center;
-		padding-top: 120px;
-		padding-bottom: 78px;
+		padding-top: 114px;
+		padding-bottom: 63px;
 		margin: @margin-center;
 	}
 	&-headerText{
-		font-family: 'TitilliumBold', sans-serif;
+		font-family: @font-base;
+		font-weight: bold;
+    	font-style: normal;
 		font-size: 40px;
 		text-transform: uppercase;
-		padding-bottom: 22px;
+		padding-bottom: 11px;
 	}
 	&-decorLine{
 		display: inline-block;
@@ -22,10 +24,12 @@
 		width: 88px;
 		height: 4px;
 		background: @color-underline-purpur;
-		margin-bottom: 24px;
+		margin-bottom: 15px;
 	}
 	&-subText{
-		font-family: 'TitilliumRegular',sans-serif;
+		font-family: @font-base;
+		 font-weight: normal;
+    	font-style: normal;
 		font-size: 18px;
 		line-height: 1.5;
 	}
@@ -38,10 +42,10 @@
 		flex-direction: row;
 		justify-content: space-between;
 		&:first-child{
-			padding-bottom: 148px;
+			padding-bottom: 131px;
 		}
 		&:last-child{
-			padding-bottom: 128px;
+			padding-bottom: 89px;
 		}
 	}
 	&-wrapCardImg{
@@ -49,18 +53,24 @@
 	}
 	&-ctt{
 		font-size: 21px;
-		font-family: 'TitilliumLight', sans-serif;
+		font-family: @font-base;
+		font-weight: 300;
+    	font-style: normal;
 		line-height: 1.5;
 		padding-bottom: 28px;
 	}
 	&-nameText{
 		font-size: 24px;
-		font-family: 'TitilliumBold', sans-serif;
+		font-family: @font-base;
+		font-weight: bold;
+    	font-style: normal;
 		padding-bottom: 11px;
 	}
 	&-post{
 		font-size: 18px;
-		font-family: 'TitilliumRegular', sans-serif;
+		font-family: @font-base;
+		 font-weight: normal;
+    	font-style: normal;
 		color: @color-text-testimonial-post;
 	}
 }

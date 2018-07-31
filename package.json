@@ -4,6 +4,7 @@
   "devDependencies": {
     "grunt": "latest",
     "grunt-autoprefixer": "latest",
+    "grunt-browser-sync": "^1.9.1",
     "grunt-cli": "latest",
     "grunt-contrib-imagemin": "latest",
     "grunt-contrib-less": "latest",

@@ -6,16 +6,19 @@
 	color: @color-text-portfolio;
 	&-header {
 		text-align: center;
-		padding-top: 120px;
-		padding-bottom: 78px;
+		padding-top: 114px;
+		padding-bottom: 47px;
+		padding-left: 9px;
 		margin: @margin-center;
-		width: 47.36%;
+		width: 48.36%;
 	}
 	&-headerText{
-		font-family: 'TitilliumBold', sans-serif;
+		font-family: @font-base;
+		font-weight: bold;
+    	font-style: normal;
 		font-size: 40px;
 		text-transform: uppercase;
-		padding-bottom: 22px;
+		padding-bottom: 11px;
 	}
 	&-decorLine{
 		display: inline-block;
@@ -23,13 +26,15 @@
 		width: 88px;
 		height: 4px;
 		background: @color-underline-portfolio;
-		margin-bottom: 24px;
+		margin-bottom: 14px;
 	}
 	&-subText{
-		font-family: 'TitilliumRegular',sans-serif;
+		font-family: @font-base;
+		font-weight: normal;
+    	font-style: normal;
 		font-size: 18px;
 		line-height: 1.5;
-		margin-bottom: 45px;
+		margin-bottom: 38px;
 	}
 	&-wrap{
 		display: flex;
@@ -37,17 +42,24 @@
 		flex-wrap: wrap;
 		justify-content: space-between;
 		text-align: center;
+		padding-top: 18px;
 	}
 	&-cardWrap{
-		padding-bottom: 63px;
+		padding-bottom: 60px;
+		&:first-child, 
+		&:nth-child(3){
+			margin-right: 10px;
+		}
 	}
 	&-items{
 		width: 100%;
-		padding-bottom: 33px;
+		padding-bottom: 24px;
 	}
 	&-textDepiction{
 		font-size: 18px;
-		font-family: "TitilliumRegular", sans-serif;
+		font-family: @font-base;
+		font-weight: normal;
+    	font-style: normal;
 		text-transform: uppercase;
 	}
 }

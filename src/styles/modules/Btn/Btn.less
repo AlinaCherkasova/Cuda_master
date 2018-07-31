@@ -2,16 +2,24 @@
 	width:294px;
 	height:66px;
 	color: @color-text;
-	font-family: 'TitilliumSemiBold', sans-serif;
+	font-family: @font-base;
+	font-weight: 600;
+    font-style: normal;
 	font-size: 18px;
 	text-transform: uppercase;
 	border-radius: 3px;
 	border-bottom-right-radius: 0;
 	border-bottom-left-radius: 0;
+	&-welcome{
+	    margin-top: 54px;
+	}
 	&-wrap{
 		width: 100%;
 		text-align: center;
 		padding-bottom: 110px;
+		padding-bottom: 112px;
+	    margin-top: 18px;
+	    margin-left: 5px;
 	}
 	&--orange{
 		background: @color-btn-welcome;
@@ -28,17 +36,28 @@
 	&--toggleWrap {
 		display: flex;
 		justify-content: center;
+		height: 37px;
+		margin: 0 auto;
 	}
 	&-item{
 		font-size: 18px;
-		font-family: 'TitilliumRegular', sans-serif;
+		font-family: @font-base;
+		font-weight: normal;
+    	font-style: normal;
 		text-transform: uppercase;
 		color: @color-text-portfolio;
 		background: @color-btn-portfolio-active;
-		margin-right: 10px;
-		padding: 13px 27px;
+		margin: 0 5px;
 		border-radius: 5px;
 		box-sizing: border-box;
+		&:first-child,
+		&:nth-child(2){
+			width: 85px;
+		}
+		&:last-child,
+		&:nth-child(3){
+			width: 90px;
+		}
 		&:hover {
 			background: @color-bg-skils;
 		}

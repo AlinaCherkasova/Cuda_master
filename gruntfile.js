@@ -70,8 +70,7 @@ module.exports = function(grunt) {
               files: ['src/views/*.html'],
               tasks: ['htmlbuild']
           }
-      }
-
+      },
   });
 
     //Load Tasks
@@ -80,7 +79,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-browser-sync');
 
     //Register Tasks
-    grunt.registerTask('default', ['imagemin','less', 'autoprefixer','htmlbuild']);
+    grunt.registerTask('default', ['imagemin','less', 'autoprefixer','htmlbuild', 'browserSync', 'watch']);
 };
