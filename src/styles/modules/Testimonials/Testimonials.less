@@ -1,0 +1,66 @@
+.Testimonials{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background: @color-bg-testimonials;
+	color: @color-text;
+	&-header {
+		text-align: center;
+		padding-top: 120px;
+		padding-bottom: 78px;
+		margin: @margin-center;
+	}
+	&-headerText{
+		font-family: 'TitilliumBold', sans-serif;
+		font-size: 40px;
+		text-transform: uppercase;
+		padding-bottom: 22px;
+	}
+	&-decorLine{
+		display: inline-block;
+		text-align: center;
+		width: 88px;
+		height: 4px;
+		background: @color-underline-purpur;
+		margin-bottom: 24px;
+	}
+	&-subText{
+		font-family: 'TitilliumRegular',sans-serif;
+		font-size: 18px;
+		line-height: 1.5;
+	}
+	&-cardContent{
+		display: flex;
+		flex-direction: row;
+	}
+	&-wrapper{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		&:first-child{
+			padding-bottom: 148px;
+		}
+		&:last-child{
+			padding-bottom: 128px;
+		}
+	}
+	&-wrapCardImg{
+		margin-right: 50px;
+	}
+	&-ctt{
+		font-size: 21px;
+		font-family: 'TitilliumLight', sans-serif;
+		line-height: 1.5;
+		padding-bottom: 28px;
+	}
+	&-nameText{
+		font-size: 24px;
+		font-family: 'TitilliumBold', sans-serif;
+		padding-bottom: 11px;
+	}
+	&-post{
+		font-size: 18px;
+		font-family: 'TitilliumRegular', sans-serif;
+		color: @color-text-testimonial-post;
+	}
+}

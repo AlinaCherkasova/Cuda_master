@@ -1,0 +1,67 @@
+.Team {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background: @color-bg-team;
+	color: @color-text-team;
+	&-header {
+		text-align: center;
+		padding-top: 120px;
+		padding-bottom: 80px;
+		margin: @margin-center;
+	}
+	&-headerText{
+		font-family: 'TitilliumBold', sans-serif;
+		font-size: 40px;
+		text-transform: uppercase;
+		padding-bottom: 22px;
+	}
+	&-decorLine{
+		display: inline-block;
+		text-align: center;
+		width: 88px;
+		height: 4px;
+		background: @color-underline-blue;
+		margin-bottom: 24px;
+	}
+	&-subText{
+		font-family: 'TitilliumRegular',sans-serif;
+		font-size: 18px;
+		line-height: 1.5;
+	}
+	&-content--wrap{
+		display: flex;
+		justify-content: space-between;
+	}
+	&-cardContent{
+		width: 23%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		box-sizing: border-box;
+	}
+	&-faceCard {
+		padding-bottom: 40px;
+	}
+	&-cardHeader{
+		font-family: 'TitilliumBold', sans-serif;
+		font-weight: bold;
+		font-size: 24px;
+		text-transform: uppercase;
+		padding-bottom: 14px;
+	}
+	&-cardSubHeader{
+		color: @color-link;
+		font-family: 'TitilliumRegular', sans-serif;
+		font-size: 16px;
+		padding-bottom: 29px;
+	}
+	&-cardSubText{
+		font-family: 'TitilliumLight', sans-serif;
+		font-size: 16px;
+		line-height: 1.5;
+		text-align: center;
+		margin: 0 30px;
+		padding-bottom: 31px;
+	}
+}

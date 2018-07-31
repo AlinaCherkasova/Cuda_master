@@ -1,0 +1,20 @@
+.Footer{
+	display: flex;
+	align-items: center;
+	background: @color-bg-footer;
+	color: @color-text;
+	font-family: 'TitilliumSemiBold', sans-serif;
+	font-size: 24px;
+	&-navigation{
+		display: flex;
+		justify-content: space-around;
+		padding: 0 73px;
+	}
+	&-items{
+		text-decoration: none;
+		color: @color-text;
+		&:hover{
+			color: @color-link;
+		}
+	}
+}

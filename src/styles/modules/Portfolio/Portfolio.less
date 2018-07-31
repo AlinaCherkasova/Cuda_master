@@ -1,0 +1,53 @@
+.Portfolio{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background: @color-bg-portfolio;
+	color: @color-text-portfolio;
+	&-header {
+		text-align: center;
+		padding-top: 120px;
+		padding-bottom: 78px;
+		margin: @margin-center;
+		width: 47.36%;
+	}
+	&-headerText{
+		font-family: 'TitilliumBold', sans-serif;
+		font-size: 40px;
+		text-transform: uppercase;
+		padding-bottom: 22px;
+	}
+	&-decorLine{
+		display: inline-block;
+		text-align: center;
+		width: 88px;
+		height: 4px;
+		background: @color-underline-portfolio;
+		margin-bottom: 24px;
+	}
+	&-subText{
+		font-family: 'TitilliumRegular',sans-serif;
+		font-size: 18px;
+		line-height: 1.5;
+		margin-bottom: 45px;
+	}
+	&-wrap{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		text-align: center;
+	}
+	&-cardWrap{
+		padding-bottom: 63px;
+	}
+	&-items{
+		width: 100%;
+		padding-bottom: 33px;
+	}
+	&-textDepiction{
+		font-size: 18px;
+		font-family: "TitilliumRegular", sans-serif;
+		text-transform: uppercase;
+	}
+}

@@ -1,0 +1,41 @@
+.Welcome {
+	display: flex;
+	color: @color-text;
+	background: @color-bg-welcome;
+	&-header {
+		display: flex;
+		justify-content: space-between;
+		padding-top: 58px;
+		padding-bottom: 150px;
+	}
+	&-navbar{
+		display: flex;
+		justify-content: space-around;
+		font-size: 16px;
+		height: 40px;
+	}
+	&-items{
+		font-family: 'TitilliumRegular', sans-serif;
+		color: @color-text;
+		text-decoration: none;
+		text-transform: uppercase;
+		padding: 10px;
+		&:hover{
+			background: @color-bg-hover;
+			border-radius: 5px;
+		}
+	}
+	&-content{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+		font-family: 'TitilliumBold', sans-serif;
+		box-sizing: border-box;
+		padding-bottom: 120px;
+	}
+	&-contentText{
+		padding-bottom: 63px;
+	}
+}

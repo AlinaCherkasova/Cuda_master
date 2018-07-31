@@ -1,0 +1,16 @@
+{
+  "name": "template",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-autoprefixer": "latest",
+    "grunt-cli": "latest",
+    "grunt-contrib-imagemin": "latest",
+    "grunt-contrib-less": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-html-build": "latest"
+  },
+  "dependencies": {
+    "jshint-stylish": "latest"
+  }
+}

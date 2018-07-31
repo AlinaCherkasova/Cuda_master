@@ -1,0 +1,46 @@
+.Btn {
+	width:294px;
+	height:66px;
+	color: @color-text;
+	font-family: 'TitilliumSemiBold', sans-serif;
+	font-size: 18px;
+	text-transform: uppercase;
+	border-radius: 3px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	&-wrap{
+		width: 100%;
+		text-align: center;
+		padding-bottom: 110px;
+	}
+	&--orange{
+		background: @color-btn-welcome;
+		box-shadow: 0 4px 4px @color-shadow-welcome;
+	}
+	&--blue{
+		background: @color-link;
+		box-shadow: 0 4px 4px @color-shadow-btn-form;
+	}
+	&--green{
+		background: @color-btn-portfolio;
+		box-shadow: 0 4px 4px @color-underline-green;
+	}
+	&--toggleWrap {
+		display: flex;
+		justify-content: center;
+	}
+	&-item{
+		font-size: 18px;
+		font-family: 'TitilliumRegular', sans-serif;
+		text-transform: uppercase;
+		color: @color-text-portfolio;
+		background: @color-btn-portfolio-active;
+		margin-right: 10px;
+		padding: 13px 27px;
+		border-radius: 5px;
+		box-sizing: border-box;
+		&:hover {
+			background: @color-bg-skils;
+		}
+	}
+}

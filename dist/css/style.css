@@ -1,0 +1,662 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h2 {
+  font-size: 42.16px;
+}
+ul {
+  list-style: none;
+}
+a {
+  background-color: transparent;
+}
+img,
+input,
+button {
+  border: 0;
+}
+input {
+  border-radius: 0;
+}
+input,
+textarea,
+select,
+button,
+a:active,
+a:hover {
+  outline: 0;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  -webkit-appearance: none;
+}
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+  outline: none;
+  border: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+td,
+th {
+  padding: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+main {
+  display: block;
+}
+@font-face {
+  font-family: 'TitilliumExtraLight';
+  src: url('../fonts/TitilliumExtraLight/TitilliumWeb-ExtraLight.eot');
+  src: local('Titillium Web ExtraLight'), local('TitilliumWeb-ExtraLight'), url('../fonts/TitilliumExtraLight/TitilliumWeb-ExtraLight.eot?#iefix') format('embedded-opentype'), url('../fonts/TitilliumExtraLight/TitilliumWeb-ExtraLight.woff') format('woff'), url('../fonts/TitilliumExtraLight/TitilliumWeb-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TitilliumBoldItalic';
+  src: url('../../fonts/TitilliumWeb-BoldItalic.eot');
+  src: local('Titillium Web Bold Italic'), local('TitilliumWeb-BoldItalic'), url('../../fonts/TitilliumWeb-BoldItalic.eot?#iefix') format('embedded-opentype'), url('../../fonts/TitilliumWeb-BoldItalic.woff') format('woff'), url('../../fonts/TitilliumWeb-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'TitilliumBold';
+  src: url('../../fonts/TitilliumWeb-Bold.eot');
+  src: local('Titillium Web Bold'), local('TitilliumWeb-Bold'), url('../../fonts/TitilliumWeb-Bold.eot?#iefix') format('embedded-opentype'), url('../../fonts/TitilliumWeb-Bold.woff') format('woff'), url('../../fonts/TitilliumWeb-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TitilliumSemiBold';
+  src: url('../../fonts/TitilliumWeb-SemiBold.eot');
+  src: local('Titillium Web SemiBold'), local('TitilliumWeb-SemiBold'), url('../../fonts/TitilliumWeb-SemiBold.eot?#iefix') format('embedded-opentype'), url('../../fonts/TitilliumWeb-SemiBold.woff') format('woff'), url('../../fonts/TitilliumWeb-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TitilliumLight';
+  src: url('../../fonts/TitilliumWeb-Light.eot');
+  src: local('Titillium Web Light'), local('TitilliumWeb-Light'), url('../../fonts/TitilliumWeb-Light.eot?#iefix') format('embedded-opentype'), url('../../fonts/TitilliumWeb-Light.woff') format('woff'), url('../../fonts/TitilliumWeb-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TitilliumBlack';
+  src: url('../../fonts/TitilliumWeb-Black.eot');
+  src: local('Titillium Web Black'), local('TitilliumWeb-Black'), url('../../fonts/TitilliumWeb-Black.eot?#iefix') format('embedded-opentype'), url('../../fonts/TitilliumWeb-Black.woff') format('woff'), url('../../fonts/TitilliumWeb-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TitilliumExtraLightItalic';
+  src: url('../../fonts/TitilliumWeb-ExtraLightItalic.eot');
+  src: local('Titillium Web ExtraLight Italic'), local('TitilliumWeb-ExtraLightItalic'), url('../../fonts/TitilliumWeb-ExtraLightItalic.eot?#iefix') format('embedded-opentype'), url('../../fonts/TitilliumWeb-ExtraLightItalic.woff') format('woff'), url('../../fonts/TitilliumWeb-ExtraLightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'TitilliumRegular';
+  src: url('../../fonts/TitilliumWeb-Regular.eot');
+  src: local('Titillium Web Regular'), local('TitilliumWeb-Regular'), url('../../fonts/TitilliumWeb-Regular.eot?#iefix') format('embedded-opentype'), url('../../fonts/TitilliumWeb-Regular.woff') format('woff'), url('../../fonts/TitilliumWeb-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TitilliumLightItalic';
+  src: url('../../fonts/TitilliumWeb-LightItalic.eot');
+  src: local('Titillium Web Light Italic'), local('TitilliumWeb-LightItalic'), url('../../fonts/TitilliumWeb-LightItalic.eot?#iefix') format('embedded-opentype'), url('../../fonts/TitilliumWeb-LightItalic.woff') format('woff'), url('../../fonts/TitilliumWeb-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'TitilliumItalic';
+  src: url('../../fonts/TitilliumWeb-Italic.eot');
+  src: local('Titillium Web Italic'), local('TitilliumWeb-Italic'), url('../../fonts/TitilliumWeb-Italic.eot?#iefix') format('embedded-opentype'), url('../../fonts/TitilliumWeb-Italic.woff') format('woff'), url('../../fonts/TitilliumWeb-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'TitilliumSemiBoldItalic';
+  src: url('../../fonts/TitilliumWeb-SemiBoldItalic.eot');
+  src: local('Titillium Web SemiBold Italic'), local('TitilliumWeb-SemiBoldItalic'), url('../../fonts/TitilliumWeb-SemiBoldItalic.eot?#iefix') format('embedded-opentype'), url('../../fonts/TitilliumWeb-SemiBoldItalic.woff') format('woff'), url('../../fonts/TitilliumWeb-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+.u-container {
+  width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.u-heightWelcome {
+  height: 596px;
+}
+.u-width40 {
+  width: 40.17%;
+}
+.u-width47 {
+  width: 47.36%;
+}
+.u-width50 {
+  width: 50%;
+}
+.u-height38 {
+  height: 38px;
+}
+.u-heightServices {
+  height: 748px;
+}
+.u-heightFooter {
+  height: 113px;
+}
+.u-height100 {
+  height: 100%;
+}
+.Welcome {
+  display: -ms-flexbox;
+  display: flex;
+  color: #ffffff;
+  background: #87509c;
+}
+.Welcome-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding-top: 58px;
+  padding-bottom: 150px;
+}
+.Welcome-navbar {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 16px;
+  height: 40px;
+}
+.Welcome-items {
+  font-family: 'TitilliumRegular', sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+}
+.Welcome-items:hover {
+  background: #643a79;
+  border-radius: 5px;
+}
+.Welcome-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  text-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  font-family: 'TitilliumBold', sans-serif;
+  box-sizing: border-box;
+  padding-bottom: 120px;
+}
+.Welcome-contentText {
+  padding-bottom: 63px;
+}
+.Btn {
+  width: 294px;
+  height: 66px;
+  color: #ffffff;
+  font-family: 'TitilliumSemiBold', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.Btn-wrap {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 110px;
+}
+.Btn--orange {
+  background: #eb7d4b;
+  box-shadow: 0 4px 4px #c86a40;
+}
+.Btn--blue {
+  background: #30bae7;
+  box-shadow: 0 4px 4px #299ec5;
+}
+.Btn--green {
+  background: #17c2a4;
+  box-shadow: 0 4px 4px #14a58c;
+}
+.Btn--toggleWrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+.Btn-item {
+  font-size: 18px;
+  font-family: 'TitilliumRegular', sans-serif;
+  text-transform: uppercase;
+  color: #393939;
+  background: #ebc985;
+  margin-right: 10px;
+  padding: 13px 27px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.Btn-item:hover {
+  background: #ffffff;
+}
+.Services {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background: #17c2a4;
+  color: #ffffff;
+}
+.Services-header {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 80px;
+  margin: 0 auto;
+}
+.Services-headerText {
+  font-family: 'TitilliumBold', sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+.Services-decorLine {
+  display: inline-block;
+  text-align: center;
+  width: 88px;
+  height: 4px;
+  background: #14a58c;
+  margin-bottom: 20px;
+}
+.Services-subText {
+  font-family: 'TitilliumRegular', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.Services-content--wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+.Services-cardContent {
+  width: 22.8%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  box-sizing: border-box;
+}
+.Services-cardImg {
+  padding-bottom: 58px;
+}
+.Services-cardHeader {
+  font-family: 'TitilliumBold', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: uppercase;
+  padding-bottom: 25px;
+}
+.Services-cardSubText {
+  font-family: 'TitilliumLight', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0 30px;
+}
+.Team {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background: #e7f1f8;
+  color: #3c4761;
+}
+.Team-header {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 80px;
+  margin: 0 auto;
+}
+.Team-headerText {
+  font-family: 'TitilliumBold', sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  padding-bottom: 22px;
+}
+.Team-decorLine {
+  display: inline-block;
+  text-align: center;
+  width: 88px;
+  height: 4px;
+  background: #c8d9e5;
+  margin-bottom: 24px;
+}
+.Team-subText {
+  font-family: 'TitilliumRegular', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.Team-content--wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+.Team-cardContent {
+  width: 23%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  box-sizing: border-box;
+}
+.Team-faceCard {
+  padding-bottom: 40px;
+}
+.Team-cardHeader {
+  font-family: 'TitilliumBold', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: uppercase;
+  padding-bottom: 14px;
+}
+.Team-cardSubHeader {
+  color: #30bae7;
+  font-family: 'TitilliumRegular', sans-serif;
+  font-size: 16px;
+  padding-bottom: 29px;
+}
+.Team-cardSubText {
+  font-family: 'TitilliumLight', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0 30px;
+  padding-bottom: 31px;
+}
+.Icon {
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 126px;
+}
+.Icon-imgLink {
+  margin-right: 11px;
+}
+.Icon-imgLink:last-child {
+  margin-right: 0;
+}
+.Portfolio {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background: #ffdd99;
+  color: #393939;
+}
+.Portfolio-header {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 78px;
+  margin: 0 auto;
+  width: 47.36%;
+}
+.Portfolio-headerText {
+  font-family: 'TitilliumBold', sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  padding-bottom: 22px;
+}
+.Portfolio-decorLine {
+  display: inline-block;
+  text-align: center;
+  width: 88px;
+  height: 4px;
+  background: #e5c37f;
+  margin-bottom: 24px;
+}
+.Portfolio-subText {
+  font-family: 'TitilliumRegular', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 45px;
+}
+.Portfolio-wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  text-align: center;
+}
+.Portfolio-cardWrap {
+  padding-bottom: 63px;
+}
+.Portfolio-items {
+  width: 100%;
+  padding-bottom: 33px;
+}
+.Portfolio-textDepiction {
+  font-size: 18px;
+  font-family: "TitilliumRegular", sans-serif;
+  text-transform: uppercase;
+}
+.Testimonials {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background: #d74680;
+  color: #ffffff;
+}
+.Testimonials-header {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 78px;
+  margin: 0 auto;
+}
+.Testimonials-headerText {
+  font-family: 'TitilliumBold', sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  padding-bottom: 22px;
+}
+.Testimonials-decorLine {
+  display: inline-block;
+  text-align: center;
+  width: 88px;
+  height: 4px;
+  background: #b73c6d;
+  margin-bottom: 24px;
+}
+.Testimonials-subText {
+  font-family: 'TitilliumRegular', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.Testimonials-cardContent {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+.Testimonials-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+.Testimonials-wrapper:first-child {
+  padding-bottom: 148px;
+}
+.Testimonials-wrapper:last-child {
+  padding-bottom: 128px;
+}
+.Testimonials-wrapCardImg {
+  margin-right: 50px;
+}
+.Testimonials-ctt {
+  font-size: 21px;
+  font-family: 'TitilliumLight', sans-serif;
+  line-height: 1.5;
+  padding-bottom: 28px;
+}
+.Testimonials-nameText {
+  font-size: 24px;
+  font-family: 'TitilliumBold', sans-serif;
+  padding-bottom: 11px;
+}
+.Testimonials-post {
+  font-size: 18px;
+  font-family: 'TitilliumRegular', sans-serif;
+  color: #facd96;
+}
+.Form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background: #3c5499;
+  color: #ffffff;
+}
+.Form-header {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 78px;
+  margin: 0 auto;
+}
+.Form-headerText {
+  font-family: 'TitilliumBold', sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+.Form-decorLine {
+  display: inline-block;
+  text-align: center;
+  width: 88px;
+  height: 4px;
+  background: #c8d9e5;
+  margin-bottom: 22px;
+}
+.Form-subText {
+  font-family: 'TitilliumRegular', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.Form-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  padding-bottom: 115px;
+}
+.Form-headerWrap {
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 27px;
+}
+.Form-headerWrap .Form-group:first-child {
+  margin-right: 32px;
+}
+.Form-box {
+  box-sizing: border-box;
+  font-family: "TitilliumRegular", sans-serif;
+  font-size: 18px;
+  padding: 19.5px;
+  background: #273a71;
+  outline: none;
+  color: #ffffff;
+  border-radius: 5px;
+}
+.Form-group {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+.Form-messege {
+  background: #273a71 url(../images/Arrow.png) no-repeat bottom right(-3px);
+  margin-bottom: 59px;
+  outline: none;
+  resize: none;
+  overflow: hidden;
+  width: 860px;
+  height: 200px;
+}
+.Form-input {
+  width: 414px;
+  height: 56px;
+}
+.Footer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  background: #344b8e;
+  color: #ffffff;
+  font-family: 'TitilliumSemiBold', sans-serif;
+  font-size: 24px;
+}
+.Footer-navigation {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 73px;
+}
+.Footer-items {
+  text-decoration: none;
+  color: #ffffff;
+}
+.Footer-items:hover {
+  color: #30bae7;
+}

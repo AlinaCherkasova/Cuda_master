@@ -1,0 +1,61 @@
+//Reset default styles
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h2{
+	font-size: 42.16px;
+}
+ul{
+	list-style: none;
+}
+a{
+	background-color: transparent;
+}
+img, input, button{
+	border: 0;
+}
+input{
+	border-radius: 0;
+}
+input, textarea, select, button,
+a:active, a:hover{
+	outline: 0;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea{
+	-webkit-appearance: none;
+}
+input[type="submit"],
+button{
+	cursor: pointer;
+	&::-moz-focus-inner{
+		border: 0;
+		padding: 0;
+	}
+}
+textarea{
+	overflow: auto;
+	outline: none;
+	border: none;
+}
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+td, th{
+	padding: 0;
+}
+svg:not(:root){
+	overflow: hidden;
+}
+main{
+	display: block;
+}
+
