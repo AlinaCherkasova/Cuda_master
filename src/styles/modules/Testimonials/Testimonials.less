@@ -1,22 +1,22 @@
 .Testimonials{
-	display: flex;
-	flex-direction: row;
+	.flex-row;
 	justify-content: center;
 	background: @color-bg-testimonials;
 	color: @color-text;
 	&-header {
 		text-align: center;
-		padding-top: 114px;
+		padding-top: 102px;
 		padding-bottom: 63px;
 		margin: @margin-center;
 	}
 	&-headerText{
 		font-family: @font-base;
-		font-weight: bold;
-    	font-style: normal;
+		.font-bold;
 		font-size: 40px;
 		text-transform: uppercase;
-		padding-bottom: 11px;
+		padding-bottom: 6px;
+		letter-spacing: 4px;
+    	padding-left: 5px;
 	}
 	&-decorLine{
 		display: inline-block;
@@ -24,53 +24,78 @@
 		width: 88px;
 		height: 4px;
 		background: @color-underline-purpur;
-		margin-bottom: 15px;
+		margin-bottom: 13px;
 	}
 	&-subText{
 		font-family: @font-base;
-		 font-weight: normal;
-    	font-style: normal;
-		font-size: 18px;
+		.font-regular;
+		font-size: @font-size-base;
 		line-height: 1.5;
+		letter-spacing: 0.4px;
 	}
 	&-cardContent{
-		display: flex;
-		flex-direction: row;
+		.flex-row;
 	}
 	&-wrapper{
-		display: flex;
-		flex-direction: row;
+		.flex-row;
 		justify-content: space-between;
 		&:first-child{
-			padding-bottom: 131px;
+			padding-bottom: 140px;
 		}
 		&:last-child{
-			padding-bottom: 89px;
+			padding-bottom: 121px;
 		}
 	}
 	&-wrapCardImg{
-		margin-right: 50px;
+		margin-right: 48px;
+		margin-left: -18px;
+		&:nth-child(2){
+			margin-right: 52px;
+		}
 	}
 	&-ctt{
 		font-size: 21px;
 		font-family: @font-base;
-		font-weight: 300;
-    	font-style: normal;
+		.font-italic;
 		line-height: 1.5;
 		padding-bottom: 28px;
+		&:first-child{
+	    	letter-spacing: 0.84px;
+	        padding-top: 6px;
+		}
+		&:nth-child(2){
+			letter-spacing: 1.2px;
+    		word-spacing: -1.2px;
+		}
 	}
 	&-nameText{
 		font-size: 24px;
 		font-family: @font-base;
-		font-weight: bold;
-    	font-style: normal;
+		.font-bold;
 		padding-bottom: 11px;
+		text-transform: uppercase;
+		&:first-child{
+			letter-spacing: -0.2px;
+		    word-spacing: 5.1px;
+		    text-transform: uppercase;
+		}
+		&:nth-child(2){
+			letter-spacing: 0.6px;
+    		padding: 3px 0 5px 3px;
+		}
 	}
 	&-post{
 		font-size: 18px;
 		font-family: @font-base;
-		 font-weight: normal;
-    	font-style: normal;
+		.font-regular;
 		color: @color-text-testimonial-post;
+		&:first-child{
+			margin-top: -3px;
+    		letter-spacing: 0.5px;
+		}
+		&:nth-child(2){
+			letter-spacing: 0.5px;
+    		padding-left: 3px;
+		}
 	}
 }

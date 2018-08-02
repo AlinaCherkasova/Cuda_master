@@ -3,10 +3,9 @@
 	height:66px;
 	color: @color-text;
 	font-family: @font-base;
-	font-weight: 600;
-    font-style: normal;
-	font-size: 18px;
-	text-transform: uppercase;
+	.font-semibold;
+	font-size: @font-size-base;
+	text-transform: @text-transform;
 	border-radius: 3px;
 	border-bottom-right-radius: 0;
 	border-bottom-left-radius: 0;
@@ -28,10 +27,14 @@
 		box-shadow: 0 4px 4px @color-shadow-welcome;
 	}
 	&--blue{
+		margin-right: 6px;
+    	padding-top: 5px;
 		background: @color-link;
 		box-shadow: 0 4px 4px @color-shadow-btn-form;
 	}
 	&--green{
+		padding-left: 4px;
+    	letter-spacing: 0.1px;
 		background: @color-btn-portfolio;
 		box-shadow: 0 4px 4px @color-underline-green;
 	}
@@ -42,10 +45,9 @@
 		margin: 0 auto;
 	}
 	&-item{
-		font-size: 18px;
+		font-size: @font-size-base;
 		font-family: @font-base;
-		font-weight: normal;
-    	font-style: normal;
+		.font-regular;
 		text-transform: uppercase;
 		color: @color-text-portfolio;
 		background: @color-btn-portfolio-active;

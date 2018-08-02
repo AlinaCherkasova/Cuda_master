@@ -1,22 +1,21 @@
 .Form{
-	display: flex;
-	flex-direction: row;
+	.flex-row;
 	justify-content: center;
 	background: @color-bg-form;
 	color: @color-text;
 	&-header {
 		text-align: center;
-		padding-top: 113px;
+		padding-top: 104px;
 		padding-bottom: 73px;
 		margin: @margin-center;
 	}
 	&-headerText{
 		font-family: @font-base;
-		font-weight: bold;
-    	font-style: normal;
+		.font-bold;
 		font-size: 40px;
-		text-transform: uppercase;
-		padding-bottom: 11px;
+		text-transform: @text-transform;
+		padding-bottom: 6px;
+		letter-spacing: 3.5px;
 	}
 	&-decorLine{
 		display: inline-block;
@@ -28,20 +27,21 @@
 	}
 	&-subText{
 		font-family: @font-base;
-		font-weight: normal;
-    	font-style: normal;
+		.font-regular;
 		font-size: 18px;
 		line-height: 1.5;
+		padding-left: 3px;
+		word-spacing: 3px;
 	}
 	&-wrapper{
-		display: flex;
-		flex-direction: column;
+		.flex-column;
 		align-items: center;
 		padding-bottom: 119px;
 	}
 	&-headerWrap{
 		display: flex;
 		padding-bottom: 27px;
+		margin-left: -8px;
 		.Form-group:first-child {
 			margin-right: 32px;
 		}
@@ -49,8 +49,7 @@
 	&-box{
 		box-sizing: border-box;
 		font-family: @font-base;
-		font-weight: normal;
-    	font-style: normal;
+		.font-regular;
 		font-size: 18px;
 		padding: 22px 26px;
 		background: @color-bg-form-input;
@@ -62,8 +61,7 @@
 		}
 	}
 	&-group{
-		display: flex;
-		flex-direction: row;
+		.flex-row;
 		margin-left: 7px;
 		&:nth-child(2){
 			margin-left: 0;
@@ -77,6 +75,7 @@
 		overflow: hidden;
 		width: 860px;
 		height: 200px;
+		padding: 18px 26px;
 	}
 	&-input{
 		width: 414px;

@@ -1,5 +1,5 @@
 .Welcome {
-	display: flex;
+	.flex-row;
 	color: @color-text;
 	background: @color-bg-welcome;
 	&-header {
@@ -17,7 +17,7 @@
 		margin-right: 4px;
 	}
 	&-navbar{
-		display: flex;
+		.flex-row;
 		justify-content: space-around;
 		font-size: 16px;
 		height: 40px;
@@ -37,8 +37,7 @@
 		}
 	}
 	&-content{
-		display: flex;
-		flex-direction: column;
+		.flex-column;
 		align-items: center;
 		box-sizing: border-box;
 		padding-bottom: 148px;
@@ -47,7 +46,7 @@
 	&-contentText{
 		font-size: 42.16px;
 		font-family: @font-base;
-		font-weight: bold;
+		.font-bold;
     	letter-spacing: -0.8px;
     	word-spacing: 3.6px;
     	margin-right: 10px;
