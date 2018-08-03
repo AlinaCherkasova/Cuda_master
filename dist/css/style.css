@@ -423,7 +423,7 @@ p {
   -ms-flex-direction: column;
       flex-direction: column;
 }
-.Team-faceCard {
+.Team-itemCard {
   margin: 0 auto;
   padding-bottom: 39px;
 }
@@ -629,7 +629,7 @@ p {
 .Testimonials-wrapCardImg:nth-child(2) {
   margin-right: 52px;
 }
-.Testimonials-ctt {
+.Testimonials-text {
   font-size: 21px;
   font-family: 'Titillium Web', sans-serif;
   font-weight: 300;
@@ -637,11 +637,11 @@ p {
   line-height: 1.5;
   padding-bottom: 28px;
 }
-.Testimonials-ctt:first-child {
+.Testimonials-text:first-child {
   letter-spacing: 0.84px;
   padding-top: 6px;
 }
-.Testimonials-ctt:nth-child(2) {
+.Testimonials-text:nth-child(2) {
   letter-spacing: 1.2px;
   word-spacing: -1.2px;
 }
@@ -788,7 +788,7 @@ p {
   font-style: normal;
   font-size: 24px;
 }
-.Footer-navigation {
+.Footer-toggle {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
