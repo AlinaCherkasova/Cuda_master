@@ -211,6 +211,7 @@ p {
   border-radius: 3px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
+  cursor: pointer;
 }
 .Btn-welcome {
   margin-top: 58px;
@@ -229,17 +230,26 @@ p {
   background: #eb7d4b;
   box-shadow: 0 4px 4px #c86a40;
 }
+.Btn--orange:active {
+  background: #c86a40;
+}
 .Btn--blue {
   margin-right: 6px;
   padding-top: 5px;
   background: #30bae7;
   box-shadow: 0 4px 4px #299ec5;
 }
+.Btn--blue:active {
+  background: #299ec5;
+}
 .Btn--green {
   padding-left: 4px;
   letter-spacing: 0.1px;
   background: #17c2a4;
   box-shadow: 0 4px 4px #14a58c;
+}
+.Btn--green:active {
+  background: #14a58c;
 }
 .Btn--toggleWrap {
   display: -ms-flexbox;
@@ -269,7 +279,7 @@ p {
 .Btn-item:nth-child(3) {
   width: 90px;
 }
-.Btn-item:hover {
+.Btn-item:active {
   background: #ffffff;
 }
 .Services {

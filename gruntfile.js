@@ -79,8 +79,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-browser-sync');
 
     //Register Tasks
-    grunt.registerTask('default', ['imagemin','less', 'autoprefixer','htmlbuild', 'browserSync', 'watch']);
+    grunt.registerTask('default', ['watch','imagemin','less','autoprefixer','htmlbuild']);
 };

@@ -9,6 +9,7 @@
 	border-radius: 3px;
 	border-bottom-right-radius: 0;
 	border-bottom-left-radius: 0;
+	cursor: pointer;
 	&-welcome{
 	    margin-top: 58px;
 	}
@@ -25,18 +26,27 @@
 		padding-left: 4px;
 		background: @color-btn-welcome;
 		box-shadow: 0 4px 4px @color-shadow-welcome;
+		&:active {
+			background: @color-shadow-welcome;
+		}
 	}
 	&--blue{
 		margin-right: 6px;
     	padding-top: 5px;
 		background: @color-link;
 		box-shadow: 0 4px 4px @color-shadow-btn-form;
+		&:active {
+			background: @color-shadow-btn-form;
+		}
 	}
 	&--green{
 		padding-left: 4px;
     	letter-spacing: 0.1px;
 		background: @color-btn-portfolio;
 		box-shadow: 0 4px 4px @color-underline-green;
+		&:active {
+			background: @color-underline-green;
+		}
 	}
 	&--toggleWrap {
 		display: flex;
@@ -62,7 +72,7 @@
 		&:nth-child(3){
 			width: 90px;
 		}
-		&:hover {
+		&:active {
 			background: @color-bg-skils;
 		}
 	}
