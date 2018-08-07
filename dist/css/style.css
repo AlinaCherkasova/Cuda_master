@@ -108,7 +108,7 @@ p {
   width: 40.17%;
 }
 .u-width47 {
-  width: 47.36%;
+  width: 45%;
 }
 .u-width50 {
   width: 50%;
@@ -121,6 +121,15 @@ p {
 }
 .u-widthcardWrap {
   width: 540px;
+}
+.u-heightSkill {
+  height: 652px;
+}
+.u-heightImg {
+  height: 185px;
+}
+.u-width377 {
+  width: 377px;
 }
 @media all and (min-width: 480px) and (max-width: (768px -1)) {
   .u-container {
@@ -156,7 +165,7 @@ p {
   padding-left: 42px;
 }
 .Welcome-navbar {
-  margin-right: 4px;
+  margin-right: 1px;
 }
 .Welcome-navbar--wrap {
   display: -ms-flexbox;
@@ -240,15 +249,6 @@ p {
   margin-top: 18px;
   margin-left: 5px;
 }
-.Button--orange {
-  letter-spacing: 0.8px;
-  padding-left: 4px;
-  background: #eb7d4b;
-  box-shadow: 0 4px 4px #c86a40;
-}
-.Button--orange:active {
-  background: #c86a40;
-}
 .Button--blue {
   margin-right: 6px;
   padding-top: 5px;
@@ -259,6 +259,7 @@ p {
   background: #299ec5;
 }
 .Button--green {
+  margin-right: 8px;
   padding-left: 4px;
   letter-spacing: 0.1px;
   background: #17c2a4;
@@ -307,11 +308,12 @@ p {
       justify-content: center;
   background: #17c2a4;
   color: #ffffff;
+  box-sizing: border-box;
 }
 .Services-header {
   text-align: center;
   padding-top: 103px;
-  padding-bottom: 84px;
+  padding-bottom: 79px;
   margin: 0 auto;
 }
 .Services-headerText {
@@ -350,7 +352,7 @@ p {
   padding-bottom: 130px;
 }
 .Services-cardContent {
-  width: 23%;
+  width: 21.5%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -359,11 +361,8 @@ p {
       align-items: center;
   box-sizing: border-box;
 }
-.Services-cardContent:first-child {
-  padding-left: 20px;
-}
 .Services-cardContent:last-child {
-  margin-right: 8px;
+  margin-right: 5px;
   margin-top: -3px;
 }
 .Services-cardContent:nth-child(2) {
@@ -374,8 +373,11 @@ p {
   margin-right: 6px;
 }
 .Services-cardImg {
+  box-sizing: border-box;
   padding-bottom: 58px;
-  margin-left: 20px;
+}
+.Services-cardImg--first {
+  margin-left: 33px;
 }
 .Services-cardHeader {
   font-family: 'Titillium Web', sans-serif;
@@ -383,7 +385,7 @@ p {
   font-style: normal;
   font-size: 24px;
   text-transform: uppercase;
-  padding-bottom: 25px;
+  padding-bottom: 31px;
 }
 .Services-cardSubText {
   font-family: 'Titillium Web', sans-serif;
@@ -589,8 +591,8 @@ p {
 .Testimonials {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
+  -ms-flex-direction: column;
+      flex-direction: column;
   -ms-flex-pack: center;
       justify-content: center;
   background: #d74680;
@@ -634,7 +636,10 @@ p {
   -ms-flex-direction: row;
       flex-direction: row;
 }
-.Testimonials-wrapper {
+.Testimonials-cardContent:nth-child(2) {
+  margin-right: 17px;
+}
+.Testimonials-wrap {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
@@ -642,15 +647,14 @@ p {
   -ms-flex-pack: justify;
       justify-content: space-between;
 }
-.Testimonials-wrapper:first-child {
-  padding-bottom: 140px;
+.Testimonials-wrap:first-child {
+  padding-bottom: 145px;
 }
-.Testimonials-wrapper:last-child {
-  padding-bottom: 121px;
+.Testimonials-wrap:last-child {
+  padding-bottom: 130px;
 }
 .Testimonials-wrapCardImg {
   margin-right: 48px;
-  margin-left: -18px;
 }
 .Testimonials-wrapCardImg:nth-child(2) {
   margin-right: 52px;
@@ -661,7 +665,7 @@ p {
   font-weight: 300;
   font-style: italic;
   line-height: 1.5;
-  padding-bottom: 28px;
+  padding-bottom: 20px;
 }
 .Testimonials-text:first-child {
   letter-spacing: 0.84px;
@@ -752,7 +756,7 @@ p {
       flex-direction: column;
   -ms-flex-align: center;
       align-items: center;
-  padding-bottom: 119px;
+  padding-bottom: 58px;
 }
 .Form-headerWrap {
   display: -ms-flexbox;
@@ -774,6 +778,12 @@ p {
   outline: none;
   color: #ffffff;
   border-radius: 5px;
+}
+.Form-box:-ms-input-placeholder {
+  color: #fff;
+}
+.Form-box::placeholder {
+  color: #fff;
 }
 .Form-box:nth-child(2) {
   padding: 0px 17px;
@@ -819,7 +829,7 @@ p {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 36px 52px;
+  padding: 41px 52px;
 }
 .Footer-items {
   text-decoration: none;

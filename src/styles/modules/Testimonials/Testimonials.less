@@ -1,5 +1,5 @@
 .Testimonials{
-	.flex-row;
+	.flex-column;
 	justify-content: center;
 	background: @color-bg-testimonials;
 	color: @color-text;
@@ -40,24 +40,26 @@
 
 	&-cardContent{
 		.flex-row;
+		&:nth-child(2){
+			margin-right: 17px;
+		}
 	}
 
-	&-wrapper{
+	&-wrap{
 		.flex-row;
 		justify-content: space-between;
 
 		&:first-child{
-			padding-bottom: 140px;
+			padding-bottom: 145px;
 		}
 
 		&:last-child{
-			padding-bottom: 121px;
+			padding-bottom: 130px;
 		}
 	}
 
 	&-wrapCardImg{
 		margin-right: 48px;
-		margin-left: -18px;
 		&:nth-child(2){
 			margin-right: 52px;
 		}
@@ -68,7 +70,7 @@
 		font-family: @font-base;
 		.font-italic;
 		line-height: 1.5;
-		padding-bottom: 28px;
+		padding-bottom: 20px;
 
 		&:first-child{
 	    	letter-spacing: 0.84px;
