@@ -155,10 +155,10 @@ p {
 .Welcome-logo--wrapper {
   padding-left: 42px;
 }
-.Welcome--navbar--wrap {
+.Welcome-navbar {
   margin-right: 4px;
 }
-.Welcome-navbar {
+.Welcome-navbar--wrap {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
@@ -208,40 +208,7 @@ p {
   padding-top: 7px;
   margin-left: 7px;
 }
-@media all and (min-width: 768px) and (max-width: (992px -1)) {
-  .Welcome-header {
-    padding-top: 20px;
-    padding-bottom: 120px;
-    height: 35px;
-    line-height: 35px;
-  }
-  .Welcome-logo--wrapper {
-    padding-left: 35px;
-  }
-  .Welcome--navbar--wrap {
-    margin-right: 4px;
-  }
-  .Welcome-navbar {
-    font-size: 14px;
-    height: 35px;
-    width: 430px;
-    margin-right: 4px;
-  }
-  .Welcome-content {
-    padding-bottom: 140px;
-    padding-top: 21px;
-  }
-  .Welcome-contentText {
-    font-size: 38px;
-  }
-  .Welcome-contentText:nth-child(2) {
-    letter-spacing: -0.7px;
-    word-spacing: 3.9px;
-    padding-top: 7px;
-    margin-left: 7px;
-  }
-}
-.Btn {
+.Button {
   width: 294px;
   height: 66px;
   color: #ffffff;
@@ -255,10 +222,17 @@ p {
   border-bottom-left-radius: 0;
   cursor: pointer;
 }
-.Btn-welcome {
+.Button-welcome {
   margin-top: 58px;
+  letter-spacing: 0.8px;
+  padding-left: 4px;
+  background: #eb7d4b;
+  box-shadow: 0 4px 4px #c86a40;
 }
-.Btn-wrap {
+.Button-welcome:active {
+  background: #c86a40;
+}
+.Button-wrap {
   width: 100%;
   text-align: center;
   padding-bottom: 110px;
@@ -266,34 +240,34 @@ p {
   margin-top: 18px;
   margin-left: 5px;
 }
-.Btn--orange {
+.Button--orange {
   letter-spacing: 0.8px;
   padding-left: 4px;
   background: #eb7d4b;
   box-shadow: 0 4px 4px #c86a40;
 }
-.Btn--orange:active {
+.Button--orange:active {
   background: #c86a40;
 }
-.Btn--blue {
+.Button--blue {
   margin-right: 6px;
   padding-top: 5px;
   background: #30bae7;
   box-shadow: 0 4px 4px #299ec5;
 }
-.Btn--blue:active {
+.Button--blue:active {
   background: #299ec5;
 }
-.Btn--green {
+.Button--green {
   padding-left: 4px;
   letter-spacing: 0.1px;
   background: #17c2a4;
   box-shadow: 0 4px 4px #14a58c;
 }
-.Btn--green:active {
+.Button--green:active {
   background: #14a58c;
 }
-.Btn--toggleWrap {
+.Button--toggleWrap {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -301,7 +275,7 @@ p {
   height: 37px;
   margin: 0 auto;
 }
-.Btn-item {
+.Button-item {
   font-size: 18px;
   font-family: 'Titillium Web', sans-serif;
   font-weight: normal;
@@ -313,15 +287,15 @@ p {
   border-radius: 5px;
   box-sizing: border-box;
 }
-.Btn-item:first-child,
-.Btn-item:nth-child(2) {
+.Button-item:first-child,
+.Button-item:nth-child(2) {
   width: 85px;
 }
-.Btn-item:last-child,
-.Btn-item:nth-child(3) {
+.Button-item:last-child,
+.Button-item:nth-child(3) {
   width: 90px;
 }
-.Btn-item:active {
+.Button-item:active {
   background: #ffffff;
 }
 .Services {

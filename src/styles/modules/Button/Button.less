@@ -13,6 +13,13 @@
 
 	&-welcome{
 	    margin-top: 58px;
+		letter-spacing: 0.8px;
+		padding-left: 4px;
+		background: @color-btn-welcome;
+		box-shadow: 0 4px 4px @color-shadow-welcome;
+		&:active {
+			background: @color-shadow-welcome;
+		}
 	}
 
 	&-wrap{
@@ -71,29 +78,16 @@
 		margin: 0 5px;
 		border-radius: 5px;
 		box-sizing: border-box;
-
 		&:first-child,
 		&:nth-child(2){
 			width: 85px;
 		}
-
 		&:last-child,
 		&:nth-child(3){
 			width: 90px;
 		}
-
 		&:active {
 			background: @color-bg-skils;
 		}
-	}
-	
-	@media @phone-strict{
-
-	}
-	@media @tablet-strict{
-		
-	}
-	@media @desktop-strict{
-		
 	}
 }
