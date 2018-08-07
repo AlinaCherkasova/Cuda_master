@@ -3,12 +3,14 @@
 	justify-content: center;
 	background: @color-bg-team;
 	color: @color-text-team;
+
 	&-header {
 		text-align: center;
 		padding-top: 102px;
 		padding-bottom: 74px;
 		margin: @margin-center;
 	}
+
 	&-headerText{
 		font-family: @font-base;
 		.font-bold;
@@ -18,6 +20,7 @@
      	padding-left: 2px;
     	letter-spacing: 3.9px;
 	}
+
 	&-decorLine{
 		display: inline-block;
 		text-align: center;
@@ -26,6 +29,7 @@
 		background: @color-underline-blue;
 		margin-bottom: 14px;
 	}
+
 	&-subText{
 		font-family: @font-base;
 		.font-regular;
@@ -33,18 +37,22 @@
 		line-height: 1.5;
 		letter-spacing: 0.378px;
 	}
+
 	&-content--wrap{
 		display: flex;
 		justify-content: space-around;
 	}
+
 	&-cardContent{
 		width: 22%;
 		.flex-column;
 	}
+
 	&-itemCard {
 		margin: @margin-center;
 		padding-bottom: 39px;
 	}
+
 	&-cardHeader{
 		font-family: @font-base;
 		.font-bold;
@@ -53,6 +61,7 @@
 		padding-bottom: 11px;
 		margin: @margin-center;
 	}
+
 	&-cardSubHeader{
 		color: @color-link;
 		font-family: @font-base;
@@ -63,6 +72,7 @@
 		letter-spacing: 1px;
     	padding-right: 11px;
 	}
+	
 	&-cardSubText{
 		margin: @margin-center;
 		font-family: @font-base;
@@ -72,5 +82,14 @@
 		text-align: center;
 		margin: -2px 20px;
 		padding-bottom: 31px;
+	}
+	@media @phone-strict{
+
+	}
+	@media @tablet-strict{
+		
+	}
+	@media @desktop-strict{
+		
 	}
 }

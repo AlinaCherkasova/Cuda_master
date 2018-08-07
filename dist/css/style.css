@@ -119,11 +119,20 @@ p {
 .u-height100 {
   height: 100%;
 }
-.u-width540 {
+.u-widthcardWrap {
   width: 540px;
 }
-.u-heightSkills {
-  height: 651px;
+@media all and (min-width: 480px) and (max-width: (768px -1)) {
+  .u-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media all and (min-width: 768px) and (max-width: (992px -1)) {
+  .u-container {
+    width: 768px;
+    margin: 0 auto;
+  }
 }
 .Welcome {
   display: -ms-flexbox;
@@ -199,9 +208,37 @@ p {
   padding-top: 7px;
   margin-left: 7px;
 }
-@media (screen and (max-width: 768px) and (min-width:320px)) {
-  .Welcome {
-    width: 100%;
+@media all and (min-width: 768px) and (max-width: (992px -1)) {
+  .Welcome-header {
+    padding-top: 20px;
+    padding-bottom: 120px;
+    height: 35px;
+    line-height: 35px;
+  }
+  .Welcome-logo--wrapper {
+    padding-left: 35px;
+  }
+  .Welcome--navbar--wrap {
+    margin-right: 4px;
+  }
+  .Welcome-navbar {
+    font-size: 14px;
+    height: 35px;
+    width: 430px;
+    margin-right: 4px;
+  }
+  .Welcome-content {
+    padding-bottom: 140px;
+    padding-top: 21px;
+  }
+  .Welcome-contentText {
+    font-size: 38px;
+  }
+  .Welcome-contentText:nth-child(2) {
+    letter-spacing: -0.7px;
+    word-spacing: 3.9px;
+    padding-top: 7px;
+    margin-left: 7px;
   }
 }
 .Btn {

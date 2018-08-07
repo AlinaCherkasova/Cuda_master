@@ -3,12 +3,14 @@
 	justify-content: center;
 	background: @color-bg-form;
 	color: @color-text;
+
 	&-header {
 		text-align: center;
 		padding-top: 104px;
 		padding-bottom: 73px;
 		margin: @margin-center;
 	}
+
 	&-headerText{
 		font-family: @font-base;
 		.font-bold;
@@ -17,6 +19,7 @@
 		padding-bottom: 6px;
 		letter-spacing: 3.5px;
 	}
+
 	&-decorLine{
 		display: inline-block;
 		text-align: center;
@@ -25,6 +28,7 @@
 		background: @color-underline-blue;
 		margin-bottom: 13px;
 	}
+
 	&-subText{
 		font-family: @font-base;
 		.font-regular;
@@ -33,19 +37,23 @@
 		padding-left: 3px;
 		word-spacing: 3px;
 	}
+
 	&-wrapper{
 		.flex-column;
 		align-items: center;
 		padding-bottom: 119px;
 	}
+
 	&-headerWrap{
 		display: flex;
 		padding-bottom: 27px;
 		margin-left: -8px;
+
 		.Form-group:first-child {
 			margin-right: 32px;
 		}
 	}
+
 	&-box{
 		box-sizing: border-box;
 		font-family: @font-base;
@@ -56,17 +64,21 @@
 		outline: none;
 		color: @color-text;
 		border-radius: 5px;
+
 		&:nth-child(2){
 			padding: 0px 17px;
 		}
 	}
+
 	&-group{
 		.flex-row;
 		margin-left: 7px;
+
 		&:nth-child(2){
 			margin-left: 0;
 		}
 	}
+
 	&-messege{
 		background: @color-bg-form-input url(../images/Arrow.png) no-repeat bottom right(-3px);
 		margin-bottom: 59px;
@@ -77,8 +89,18 @@
 		height: 200px;
 		padding: 18px 26px;
 	}
+	
 	&-input{
 		width: 414px;
 		height: 56px;
+	}
+	@media @phone-strict{
+
+	}
+	@media @tablet-strict{
+		
+	}
+	@media @desktop-strict{
+		
 	}
 }

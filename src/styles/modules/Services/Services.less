@@ -3,12 +3,14 @@
 	justify-content: center;
 	background: @color-bg-services;
 	color: @color-text;
+
 	&-header {
 		text-align: center;
 		padding-top: 103px;
 		padding-bottom: 84px;
 		margin: @margin-center;
 	}
+
 	&-headerText{
 		font-family: @font-base;
 		.font-bold;
@@ -19,6 +21,7 @@
     	word-spacing: -5px;
     	padding-left: 7px;
 	}
+
 	&-decorLine{
 		display: inline-block;
 		text-align: center;
@@ -27,6 +30,7 @@
 		background: @color-underline-green;
 		margin-bottom: 12px;
 	}
+
 	&-subText{
 		font-family: @font-base;
 		.font-regular;
@@ -35,35 +39,43 @@
       	padding-left: 6px;
     	letter-spacing: 0.4px;
 	}
+
 	&-content--wrap{
 		display: flex;
 		justify-content: space-between;
 		padding-bottom: 130px;
 	}
+
 	&-cardContent{
 		width: 23%;
 		.flex-column;
 		align-items: center;
 		box-sizing: border-box;
+
 		&:first-child{
 			padding-left: 20px;
 		}
+
 		&:last-child{
 			margin-right: 8px;
     		margin-top: -3px;
 		}
+
 		&:nth-child(2){
 			margin-top: -6px;
     		margin-left: 14px;
 		}
+
 		&:nth-child(3){
 			margin-right: 6px;
 		}
 	}
+
 	&-cardImg {
 		padding-bottom: 58px;
 		margin-left: 20px;
 	}
+
 	&-cardHeader{
 		font-family: @font-base;
 		.font-bold;
@@ -71,6 +83,7 @@
 		text-transform: @text-transform;
 		padding-bottom: 25px;
 	}
+	
 	&-cardSubText{
 		font-family: @font-base;
 		.font-light;
@@ -78,5 +91,14 @@
 		line-height: 1.5;
 		text-align: center;
 		margin: -10px 19px;
+	}
+	@media @phone-strict{
+
+	}
+	@media @tablet-strict{
+		
+	}
+	@media @desktop-strict{
+		
 	}
 }
