@@ -17,7 +17,7 @@
 		.font-bold;
 		font-size: 40px;
 		text-transform: @text-transform;
-		padding-bottom: 7px;
+		padding-bottom: 5px;
 		letter-spacing: 4.7px;
     	word-spacing: -5px;
     	padding-left: 7px;
@@ -40,40 +40,51 @@
       	padding-left: 6px;
     	letter-spacing: 0.4px;
 	}
-
+	&-content{
+		display: flex;
+	}
 	&-content--wrap{
 		display: flex;
 		justify-content: space-between;
-		padding-bottom: 130px;
+		align-items: baseline;
+		padding-bottom: 136px;
+		&:first-child{
+			margin-right: 46px;
+		}
 	}
 
 	&-cardContent{
-		width: 21.5%;
+		width: 45%;
 		.flex-column;
 		align-items: center;
 		box-sizing: border-box;
 
-		&:last-child{
-			margin-right: 5px;
+		&--rocket{
+			margin-right: 10px;
     		margin-top: -3px;
-		}
-
-		&:nth-child(2){
-			margin-top: -6px;
-    		margin-left: 14px;
 		}
 
 		&:nth-child(3){
 			margin-right: 6px;
+		}
+		&--pencil{
+			margin-right: -14px;
 		}
 	}
 
 	&-cardImg {
 		box-sizing: border-box;
 		padding-bottom: 58px;
+		margin-left: 11px;
 		&--first{
-			margin-left: 33px;
+			margin-left: 42px;
 		}
+		&--rocket{
+			margin-left: 2px;
+		}
+	}
+	&-wrapTextContent{
+		text-align: center;
 	}
 
 	&-cardHeader{
@@ -81,7 +92,7 @@
 		.font-bold;
 		font-size: 24px;
 		text-transform: @text-transform;
-		padding-bottom: 31px;
+		padding-bottom: 27px;
 	}
 	
 	&-cardSubText{
