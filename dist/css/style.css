@@ -792,14 +792,14 @@ p {
   color: #ffffff;
   font-size: 18px;
 }
-.Form-placeinput .Form-box:invalid + .Form-placeholder {
+.Form-placeInput .Form-box:invalid + .Form-placeholder {
   display: inline;
 }
-.Form-placeinput {
+.Form-placeInput {
   position: relative;
   overflow: hidden;
 }
-.Form-placeinput span {
+.Form-placeInput span {
   color: #d44151;
 }
 .Form-group {
