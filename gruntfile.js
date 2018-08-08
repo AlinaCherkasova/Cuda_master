@@ -1,6 +1,24 @@
 module.exports = function(grunt) {
   grunt.initConfig({
       pkg: grunt.file.readJSON('package.json'),
+       //Uglify you js
+      uglify: {
+          build: {
+              src: 'src/js/common.js',
+              dest: 'dist/js/common.min.js'
+          }
+      },
+
+        //You can to hint you js
+      jshint:{
+          options: {
+              reporter: require('jshint-stylish')
+          },
+
+          main: [
+              'src/js/*.js'
+          ]
+      },
 
         //Minify you images
       imagemin: {
@@ -74,6 +92,8 @@ module.exports = function(grunt) {
   });
 
     //Load Tasks
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-html-build');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-less');
@@ -81,5 +101,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     //Register Tasks
-    grunt.registerTask('default', ['watch','imagemin','less','autoprefixer','htmlbuild']);
+    grunt.registerTask('default', ['watch', 'uglify', 'jshint','imagemin','less','autoprefixer','htmlbuild']);
 };

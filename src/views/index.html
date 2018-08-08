@@ -317,14 +317,23 @@
 			<form class="Form-wrapper" action="#" method="post">
 				<div class="Form-headerWrap">
 					<div class="Form-group">
-						<input class="Form-box Form-input" type="text" name="username" placeholder="Your name*" required>
+						<label class="Form-placeinput" id="click">
+						<input class="Form-box Form-input" type="text" name="username" required>
+						<div class="Form-placeholder" id="main">Your name<span>*</span></div>
+						</label>
 					</div>
 					<div class="Form-group">
-						<input class="Form-box Form-input" type="email" name="email" placeholder="Your email*" required>
+						<label class="Form-placeinput" id="click">
+						<input class="Form-box Form-input" type="email" name="email" required>
+						<div class="Form-placeholder" id="main">Your email<span>*</span></div>
+						</label>
 					</div>
 				</div>
 				<div class="Form-group">
-					<textarea class="Form-box Form-messege" name="messege" placeholder="Your Message*" required></textarea>
+					<label class="Form-placeinput" id="click">
+					<textarea class="Form-box Form-messege" name="messege" required></textarea>
+					<div class="Form-placeholder" id="main">Your Message<span>*</span></div>
+					</label>
 				</div>
 				<div class="Form-group">
 					<input class="Button Button--blue" type="submit" name="button" value="Send messege">
@@ -345,5 +354,6 @@
 			</ul>
 		</div>
 	</footer>
+	<script src="js/common.js"></script>
 </body>
 </html>

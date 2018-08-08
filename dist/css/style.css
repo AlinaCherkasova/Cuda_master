@@ -259,7 +259,7 @@ p {
   background: #299ec5;
 }
 .Button--green {
-  margin-right: 8px;
+  margin-right: 9px;
   padding-left: 4px;
   letter-spacing: 0.1px;
   background: #17c2a4;
@@ -773,20 +773,34 @@ p {
   font-weight: normal;
   font-style: normal;
   font-size: 18px;
-  padding: 22px 26px;
+  padding: 16px 26px;
   background: #273a71;
   outline: none;
   color: #ffffff;
   border-radius: 5px;
 }
-.Form-box:-ms-input-placeholder {
-  color: #fff;
-}
-.Form-box::placeholder {
-  color: #fff;
-}
 .Form-box:nth-child(2) {
   padding: 0px 17px;
+}
+.Form-placeholder {
+  left: 10px;
+  cursor: text;
+  position: absolute;
+  top: 18px;
+  left: 27px;
+  display: none;
+  color: #ffffff;
+  font-size: 18px;
+}
+.Form-placeinput .Form-box:invalid + .Form-placeholder {
+  display: inline;
+}
+.Form-placeinput {
+  position: relative;
+  overflow: hidden;
+}
+.Form-placeinput span {
+  color: #d44151;
 }
 .Form-group {
   display: -ms-flexbox;

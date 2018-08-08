@@ -59,20 +59,38 @@
 		font-family: @font-base;
 		.font-regular;
 		font-size: 18px;
-		padding: 22px 26px;
+		padding: 16px 26px;
 		background: @color-bg-form-input;
 		outline: none;
 		color: @color-text;
 		border-radius: 5px;
 
-		&::placeholder{
-			color: #fff;
-			
-		}
-
 		&:nth-child(2){
 			padding: 0px 17px;
 		}
+	}
+	&-placeholder {    
+	    left: 10px;
+	    cursor: text;   
+	    position: absolute;
+	    top: 18px;
+	    left: 27px;   
+	    display: none;
+	    color: @color-text;
+	    font-size: 18px;
+	}
+
+	&-placeinput &-box:invalid + &-placeholder{
+		display: inline;
+	}
+	
+	&-placeinput{
+		position: relative;
+	    overflow: hidden;
+	}
+
+	&-placeinput span{
+		color: @color-span;
 	}
 
 	&-group{
@@ -98,14 +116,5 @@
 	&-input{
 		width: 414px;
 		height: 56px;
-	}
-	@media @phone-strict{
-
-	}
-	@media @tablet-strict{
-		
-	}
-	@media @desktop-strict{
-		
-	}
+	} 
 }

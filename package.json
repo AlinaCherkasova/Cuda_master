@@ -4,10 +4,11 @@
   "devDependencies": {
     "grunt": "latest",
     "grunt-autoprefixer": "latest",
-    "grunt-browser-sync": "^1.9.1",
     "grunt-cli": "latest",
     "grunt-contrib-imagemin": "latest",
+    "grunt-contrib-jshint": "^1.1.0",
     "grunt-contrib-less": "latest",
+    "grunt-contrib-uglify": "^3.4.0",
     "grunt-contrib-watch": "latest",
     "grunt-html-build": "latest"
   },
